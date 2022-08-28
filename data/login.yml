@@ -1,0 +1,36 @@
+sammary:
+    description: testcase description
+    host: ''
+    name: 登录接口
+testcases:
+    - name: 登录接口
+      request:
+          data:
+              - 1110
+          headers:
+              Content-Type: application/json
+              Postman-Token: 4731be57-da94-4a22-a815-82d086205548
+              User-Agent: PostmanRuntime/7.25.0
+          method: POST
+          url: http://t.dh.qa.daling.com/dh_uc/inner/shop/bachGetCurUserAndShopInfo
+      validate:
+          expectData:
+              data:
+                  - followPromoCode: '10880041'
+                    headImg: https://img2.daling.com/zin/public/specialTopic/2020/07/04/17/14/01/525400B9EA93UKR14000008304103.png
+                    level: 2
+                    mobile: '18988888888'
+                    nickName: 189****8888
+                    promoCode: '10880155'
+                    sex: 1
+                    shopId: 1110
+                    status: 1
+                    unionId: null
+                    userId: 1380
+                    userType: 2
+                    vipName: 黄金会员
+                    vipRegisterTime: 2020-07-05T07:31:00.000+0000
+                    whatNickName: null
+              errorMsg: 全部成功
+              status: 0
+          status_code: 200
